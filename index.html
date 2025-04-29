@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Crachá Programador Estilo Moderno</title>
+<link rel="stylesheet" href="./CSS/styles.css">
+
+ 
+
+</head>
+<body>
+
+<div class="cracha-container">
+  <div class="cordao"></div>
+  <div class="clipe"></div>
+  <div class="furo"></div>
+
+  <div class="cracha">
+    <!-- Frente -->
+    <div class="face front">
+      <img src="./img/foto.jpg" alt="Avatar" class="avatar" title="Clique para trocar foto" onclick="trocarAvatar()" />
+      <div class="nome" id="nome">Fernando Santos</div>
+      <div class="cargo" id="cargo">Programador</div>
+      <div class="email" id="email">fernandobcl@yahoo.com.br</div>
+
+      <div class="badges">
+        <img src="./img/html.png" alt="HTML" title="HTML" onclick="mudarCor('#e34c26')" />
+        <img src="./img/css.png" alt="CSS" title="CSS" onclick="mudarCor('#264de4')" />
+        <img src="./img/js.png" alt="JavaScript" title="JavaScript" onclick="mudarCor('#F7DF1E')" />
+        <img src="./img/react.png" alt="React" title="React" onclick="mudarCor('#61DAFB')" />
+        <img src="./img/node.png" alt="Node.js" title="Node.js" onclick="mudarCor('#339933')" />
+      </div>
+
+      <div class="links">
+        <a id="portfolio" href="https://fernandojesuss.github.io/ProjetoPortifolio/" target="_blank">📂 Portfólio</a>
+        <a id="linkedin" href="https://www.linkedin.com/in/fernando-santos-jesus/" target="_blank">💼 LinkedIn</a>
+      </div>
+    </div>
+
+    <!-- Verso -->
+    <!-- <div class="face back">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=130x130&data=marketing.com" alt="QR Code" class="qr-code" />
+      <div class="back-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna <br /><br />
+        <strong>MARKETING.COM</strong>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<input type="file" id="inputAvatar" accept="image/*" style="display:none" onchange="carregarAvatar(event)" />
+
+<script src="./Javascript/script.js"></script>
+</body>
+</html>
